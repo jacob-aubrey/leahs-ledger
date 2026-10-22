@@ -1,0 +1,9 @@
+SYNTHETIC EXAMPLE — NOT A REAL RECEIPT
+
+Example art vendor
+Date: 2026-10-22
+Item: Example painting for a promotional video
+Total paid: $150.00
+
+This file exists only to try the document workflow.
+It is not evidence of an actual business purchase.

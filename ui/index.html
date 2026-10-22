@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Leah’s Ledger</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#snapshot" data-page="snapshot" aria-label="Leah's Ledger financial snapshot" data-tip="Return to your financial snapshot."><span class="brand-mark">l<span>✦</span></span><span>leah’s ledger<span class="brand-caption">CREATOR FINANCE TRACKER</span></span></a>
+      <div class="workspace-label">YOUR WORKSPACE</div>
+      <nav id="navigation"></nav>
+      <div class="sidebar-bottom">
+        <button class="nav-item" data-action="settings" aria-label="Settings and backups" data-tip="Change your name, save a backup, or restore your records."><span data-icon="settings"></span><span>Settings & backups</span></button>
+        <button class="nav-item" data-action="help" aria-label="Help" data-tip="How to use transactions, documents, and reports."><span data-icon="help"></span><span>Help</span></button>
+        <div class="local-status" data-tip="Records and original files are stored on this Windows PC. Use an exported backup to keep a second copy elsewhere." tabindex="0"><span class="status-dot"></span>Private on this PC<span data-icon="lock"></span></div>
+        <button class="exit-button" data-action="exit" data-tip="Save a backup and close the app’s local service.">Save & exit <span data-icon="logout"></span></button>
+      </div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar">
+        <div class="breadcrumb">Your workspace <span>/</span> <strong id="page-name">Snapshot</strong></div>
+        <div class="topbar-actions"><button class="search-trigger" data-action="search" aria-label="Search transactions" data-tip="Search your transactions by name, source, campaign, category, or notes. Shortcut: Ctrl + K."><span data-icon="search"></span><span>Search transactions…</span><kbd>Ctrl K</kbd></button><div class="avatar" id="avatar" data-tip="This is your personal business workspace." tabindex="0">L</div></div>
+      </header>
+      <main id="content" tabindex="-1"><div class="loading"><span class="loader"></span>Loading your records…</div></main>
+      <footer class="app-footer"><span>Local records · USD</span><span>Leah’s Ledger <span class="footer-star">✦</span></span></footer>
+    </div>
+  </div>
+  <dialog id="modal" aria-labelledby="modal-title"></dialog>
+  <div id="tooltip" role="tooltip" hidden></div>
+  <div id="toasts" aria-live="polite" aria-atomic="true"></div>
+  <input type="file" id="document-upload" multiple hidden>
+  <input type="file" id="csv-upload" accept=".csv,text/csv,text/tab-separated-values,.tsv" hidden>
+  <input type="file" id="restore-upload" accept=".zip,application/zip" hidden>
+</body>
+</html>

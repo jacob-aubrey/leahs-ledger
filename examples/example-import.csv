@@ -1,0 +1,4 @@
+Date,Type,Name,Amount,Source,Category,Campaign,Notes
+2026-10-01,income,Example ShopMy payment,125.00,ShopMy,Affiliate commission,,Synthetic example only; remove this row before importing your own data
+2026-10-02,expense,Example art vendor,75.00,Olivia Rose James · Royals,Artwork & content purchases,Royals · Example painting,Synthetic example; preparer should review business use and tax treatment
+2026-10-05,income,Example campaign payment,200.00,Olivia Rose James · Royals,Sponsored content,Royals · Example painting,Synthetic example only
